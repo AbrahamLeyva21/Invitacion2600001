@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Invitación de Boda</title>
+    <link rel="stylesheet" href="invitacion.css">
+</head>
+<body>
+
+<!-- MUSICA -->
+<audio id="musica" loop>
+    <source src="cancion.mp3" type="audio/mpeg">
+</audio>
+
+<!-- NIEVE -->
+<canvas id="snow"></canvas>
+
+<div id="invitados">
+    Katia y Leo
+    <div class="texto">
+        Con mucho cariño guadamos este espacio para ustedes
+    </div> 
+</div>
+
+<!-- SOBRE -->
+<div class="sobre" onclick="abrirSobre()">
+    <div class="tapa"></div>
+        <div class="sello"></div>
+</div>
+
+<!-- CONTENIDO -->
+<div class="contenido oculto">
+
+    <!-- FLORES DECORATIVAS -->
+    <div class="flores"></div>
+
+    <!-- FOTOS LATERALES -->
+    <div class="photo left"><img src="photo1.jpg"></div>
+    <div class="photo right"><img src="photo2.jpg"></div>
+    <div class="photo left2"><img src="photo3.jpg"></div>
+    <div class="photo right2"><img src="photo4.jpg"></div>
+    <div class="photo left3"><img src="photo5.jpg"></div>
+    <div class="photo right3"><img src="photo6.jpg"></div>
+    <div class="photo left4"><img src="photo7.jpg"></div>
+    <div class="photo right4"><img src="photo8.jpg"></div>
+
+    <div class="container fade-in">
+        <h2>¡Nos casamos!</h2>
+        <h1>Ana & Carlos</h1>
+
+        <p class="info">19 de Diciembre 2026</p>
+        <p class="info">Monterrey, Nuevo León</p>
+
+        <!-- COUNTDOWN -->
+        <div id="countdown"></div>
+        <button onclick="confirmarAsistencia()">Confirmar Asistencia</button>
+    </div>
+
+    <!-- MAPA -->
+    <div class="mapa fade-in">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.919456708573!2d-109.9319578263444!3d27.51789592209765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86c81598c56a3169%3A0x9c4a40513ecb4cf9!2sArc%C3%A1ngeles%20Centro%20de%20Eventos!5e0!3m2!1ses!2smx!4v1774833436362!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- GALERÍA -->
+    <div class="galeria fade-in">
+        <div class="foto-cinta"><img src="photo3cinta.jpg"></div>
+        <div class="foto-cinta"><img src="photo2cinta.jpg"></div>
+        <div class="foto-cinta"><img src="photo1cinta.jpg"></div>
+    </div>
+
+</div>
+
+<script src="invitacion.js"></script>
+</body>
+</html>
